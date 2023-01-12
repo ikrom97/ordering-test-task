@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include desktop {
+    max-width: 1200px;
+  }
+}
+
+.title-1 {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: normal;
+  margin: 0;
+
+  @include desktop {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+
+.title-2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  margin: 0;
+
+  @include desktop {
+    font-size: 28px;
+  }
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+abbr,
+abbr[title] {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+picture {
+  display: flex;
+}

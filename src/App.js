@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import PageHeader from './components/PageHeader';
+import OrderForm from './components/OrderForm';
+import './assets/sass/style.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <PageHeader />
+
+      <main className="order-page container">
+        <ul className="order-page__breadcrumbs breadcrumbs">
+          <li className="breadcrumbs__item">
+            <a className="breadcrumbs__link" href="blank.html">Главная</a>
+          </li>
+
+          <li className="breadcrumbs__item">Оформление заказа</li>
+        </ul>
+
+        <OrderForm className="order-page__form" />
+      </main>
+    </>
   );
 }
 

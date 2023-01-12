@@ -1,0 +1,26 @@
+.selected-products {
+  border-bottom: 0.5px solid $grey;
+  margin-bottom: 40px;
+
+  .product-card {
+    border-top: 0.5px solid $grey;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.selected-products__info {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  @include desktop {
+    margin-bottom: 30px;
+
+    br {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.page-header {
+  padding: 20px 0;
+
+  @include desktop {
+    position: relative;
+    padding: 24px 0;
+    border-bottom: 1px solid $grey;
+  }
+}

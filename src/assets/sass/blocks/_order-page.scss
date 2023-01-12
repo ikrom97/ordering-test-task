@@ -1,0 +1,52 @@
+.order-page {
+  padding-bottom: 40px;
+
+  @include desktop {
+    padding-bottom: 72px;
+  }
+}
+
+.order-page__breadcrumbs {
+  margin-top: 4px;
+  margin-bottom: 32px;
+
+  @include desktop {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+}
+
+.order-page__title {
+  margin-bottom: 10px;
+
+  @include desktop {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 60px;
+  }
+}
+
+.order-page__form {
+  @include desktop {
+    display: grid;
+    grid-template-columns: auto 400px;
+    gap: 40px;
+    grid-template-areas:
+      "products order"
+      "contacts map"
+      "payment map"
+      "comment map";
+  }
+}
+
+[data-area="map"] {
+  grid-area: map;
+}
+
+[data-area="payment"] {
+  grid-area: payment;
+}
+
+[data-area="comment"] {
+  grid-area: comment;
+}

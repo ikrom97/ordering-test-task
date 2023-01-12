@@ -1,0 +1,10 @@
+.have-account {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: $grey-dark;
+
+  @include desktop {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
